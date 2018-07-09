@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Parts{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+{% for part in parts %}
+	<div><p>{{ part }}</p></div>
+{% endfor %}
+{% endblock %}
